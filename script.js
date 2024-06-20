@@ -37,8 +37,9 @@ persons.addEventListener('input', (e) => {
 })
 
 reset.addEventListener('click',(e) =>{
-    bill.placeholder = "0"
+    bill.value = "0"
     persons.value = "0"
+    custom.value = "0"
     totalTip.innerText = `$0`
     totalP.innerText = `$0`
 })
