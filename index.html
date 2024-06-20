@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-dollar.svg">
+  
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="style.css">
+
+    <!-- =========== bootsrap ============ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="logo mt-5 mx-auto ">
+    <p id="logo">SPLI</p>
+    <p id="logo">TTER</p>
+  </div>
+  <div class="mainContainer mt-5 d-flex">
+    <div class="sub-container d-flex flex-lg-row flex-md-row flex-sm-column align-items-center ">
+      <div class="sec-1  d-flex flex-column ms-md-5">
+        <div class="bill my-4 mt-4">
+          <p>Bill</p>
+          <div class="input-box">
+          <span><img src="images/icon-dollar.svg" alt="" width="8px"></span>
+          <input id="bill-inp" type="text" placeholder="0">
+          </div>
+        </div>
+
+       
+
+        <div class="person my-4 ali">
+          <p>Number of people</p>
+          <div class="input-box">
+          <span><img src="images/icon-person.svg" alt="" width="8px"></span>
+          <input id="person-inp" type="text" placeholder="0">
+          </div>
+        </div>    
+        
+        <div class="select-tip my-4">
+          <p>Select tip %</p>
+          <div class="btns d-flex row-gap-1 align-items-center column-gap-3 flex-wrap ">
+            <button id="btn"  value="5">5%</button>
+            <button id="btn" value="10">10%</button>
+            <button id="btn" value="15">15%</button>
+            <button id="btn" value="25">25%</button>
+            <button id="btn" value="50">50%</button>
+            <input id="custom" type="text" placeholder="Custom">
+          </div>
+        </div>
+
+      </div>
+      <div class="sec-2 me-4">
+        <div class="tip mx-4 mt-5 d-flex justify-content-between">
+          <div class="t-con">
+            <p id="total-p">Tip Amount</p>
+            <p id="total-subp"> / person</p>
+          </div>
+          <div class="t-price">
+            <p id="price-p" class="tip-p">$0.00</p>
+          </div>
+        </div>
+
+        <div class="total mx-4 mb-4 mt-4 d-flex justify-content-between">
+          <div class="tot-con">
+            <p id="total-p">Total Amount</p>
+            <p id="total-subp"> / person</p>
+          </div>
+          <div class="t-price">
+            <p id="price-p" class="tot-p">$0.00</p>
+          </div>
+        </div>
+        
+        <button id="reset-btn" class="mt-5 mx-5">RESET</button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

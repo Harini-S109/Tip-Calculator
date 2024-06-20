@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-primary:hsl(172, 67%, 45%);
+    --color-dark:hsl(183, 100%, 15%);
+    --color-neutral:hsl(186, 14%, 43%);
+    --color-grey:hsl(184, 14%, 56%);
+    --color-light:hsl(185, 41%, 84%);
+    --color-vlight:hsl(189, 41%, 97%);
+    --color-white:hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--color-light) !important;
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 10vh;
+    line-height: .5rem;
+}
+
+#logo{
+    font-family: Space Mono;
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: larger;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-dark);
+    border-radius: 5px;
+}
+
+
+.mainContainer{
+    background-color:var(--color-white);
+    width: 100vh;
+    height: 55vh;
+    margin: auto;
+    border-radius: 30px;
+}
+
+p{
+    font-family: Space Mono;
+    color: var(--color-neutral);
+    font-weight: 700;
+    font-size: .8rem;
+    line-height: .5rem;
+}
+
+.bill{
+    line-height: 0rem;
+    width: 17rem;
+}
+.sec-1{
+    width: 50%;
+}
+
+::placeholder{
+    border: none;
+    text-align: end;
+    font-family: Space Mono;
+    color: var(--color-grey);
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+
+input{
+    width: 16rem;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    text-align: end;
+    color: var(--color-grey);
+    font-family: Space Mono;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+.input-box{
+   background-color: var(--color-vlight);
+}
+.select-tip{
+   margin: 0rem;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--color-dark);
+    border: none;
+}
+#btn{
+    border-radius: 5px;
+    font-family: Space Mono;
+    color: var(--color-light);
+    font-weight: 700;
+}
+#cbtn{
+    background-color: var(--color-vlight);
+    border-radius: 5px;
+    font-family: Space Mono;
+    color: var(--color-neutral);
+    font-weight: 700;
+}
+
+#custom{
+    width: 5rem;
+    height: 2rem;
+}
+
+.sec-2{
+    background-color: var(--color-dark);
+    height: 45vh;
+    border-radius: 15px;
+}
+#total-p{
+    font-family: Space Mono;
+    color: var(--color-light);
+    font-weight: 700;
+}
+#total-subp{
+    font-family: Space Mono;
+    color: var(--color-grey);
+    font-weight: 700;
+}
+#price-p{
+    font-family: Space Mono;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: .5rem;
+}
+#reset-btn{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-family: Space Mono;
+    font-weight: 700;
+}
+#btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    transition: all .5s ease;
+}
+#reset-btn:hover{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+@media screen and (max-width: 780px){
+    .mainContainer{
+        height: 100vh;
+        width: 100vw;
+       
+    }
+    .sub-container{
+        flex-direction: column;
+    }
+    input{
+        width: 75vw;
+        height: 2rem;
+        text-align: end;
+        color: var(--color-grey);
+        font-family: Space Mono;
+        font-weight: 700;
+        padding-right: .5rem;
+    }
+    .input-box{
+        width: 80vw;
+        height: 2rem;
+    }
+    .sub-container{
+        margin: 0 auto ;
+    }
+    .sec-1{
+        width: 80%;
+    }
+    #reset-btn{
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
