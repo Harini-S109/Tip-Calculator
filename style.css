@@ -18,6 +18,9 @@ body{
 }
 
 .logo{
+    display: grid;
+    margin: auto;
+    align-items: center;
     width: 10vh;
     line-height: .5rem;
 }
@@ -81,10 +84,11 @@ input{
     color: var(--color-grey);
     font-family: Space Mono;
     font-weight: 700;
-    padding-right: 1rem;
 }
 .input-box{
    background-color: var(--color-vlight);
+   border-radius: 5%;
+   padding: 0 .1rem;
 }
 .select-tip{
    margin: 0rem;
@@ -172,11 +176,11 @@ button{
         color: var(--color-grey);
         font-family: Space Mono;
         font-weight: 700;
-        padding-right: .5rem;
+        padding-right: .2rem;
     }
     .input-box{
         width: 80vw;
-        height: 2rem;
+        height: 2.5rem;
     }
     .sub-container{
         margin: 0 auto ;
@@ -184,20 +188,27 @@ button{
     .sec-1{
         width: 80%;
     }
+    .sec-2{
+        display: grid;
+        margin: auto;
+        align-items: center;
+        width: 90vw;
+    }
     #reset-btn{
-        margin: 0;
+        display: grid;
+        margin: auto;
+        align-items: center;
+        width: 70vw;
+        margin-bottom: 2rem;
+    }
+    button{
+        width: 23vw;
+        height: 2.5rem;
+        background-color: var(--color-dark);
+        border: none;
+    }
+    #custom{
+        width: 5.3rem;
+        height: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
