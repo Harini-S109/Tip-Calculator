@@ -71,9 +71,14 @@ p{
     font-family: Space Mono;
     color: var(--color-grey);
     font-weight: 700;
-    margin-right: .5rem;
+    margin-right: .1;
 }
 
+#error{
+    color: red;
+    text-align: right;
+    display: none;
+}
 
 input{
     width: 16rem;
